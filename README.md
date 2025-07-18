@@ -9,7 +9,7 @@
 
 HexRay is a low-level debugger for transformer models. It gives you the power to inspect what happens inside large language models at every layer and every token — just like an X-ray reveals the inner structure of the human body.
 
-Built on [TransformerLens](https://github.com/neelnanda-io/TransformerLens), HexRay supports token-level tracing, neuron-level introspection, and activation monitoring for researchers, red teamers, and AI safety engineers.
+Built on [TransformerLens](https://github.com/neelnanda-io/TransformerLens) — a library for mechanistic interpretability of GPT-2-style language models. Mechanistic interpretability aims to reverse engineer the algorithms a model has learned by analyzing its weights. HexRay enables token-level tracing, neuron-level introspection, and activation monitoring, making it a powerful tool for researchers, red teamers, and AI safety engineers.
 
 ---
 
