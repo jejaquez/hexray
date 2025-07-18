@@ -56,7 +56,7 @@ Top Contributors to Final Logit:
 # 🔧 Chain of Though Debugging
 
 ```bash
-python hexray.py --prompt "If John has 3 apples..." --cot-debug --top-k-attribution 1 
+python hexray.py --prompt "If John has 3 apples..." --cot-debug --top-k-attribution 10
 ```
 
 ---
