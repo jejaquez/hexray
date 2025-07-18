@@ -23,7 +23,7 @@ Built on [TransformerLens](https://github.com/neelnanda-io/TransformerLens) — 
 
 ---
 
-## 🔧 Usage
+## 🔧 Basic Usage
 
 ```bash
 python hexray.py --prompt "Why do bees buzz?" --top-k-attribution 10  
@@ -51,6 +51,36 @@ Top Contributors to Final Logit:
 - Attn L0 : +9.62 (5.1%)
 - Attn L7 : +7.67 (4.0%)
 - MLP  L2 : +6.20 (3.3%)
+```
+
+# 🔧 Chain of Though Debugging
+
+```bash
+python hexray.py --prompt "If John has 3 apples..." --cot-debug --top-k-attribution 1 
+```
+
+---
+
+## 🟩 Output
+
+```bash
+Loading model gpt2-small...
+Loaded pretrained model gpt2-small into HookedTransformer
+Loaded pretrained model gpt2-small into HookedTransformer
+
+🧠 Chain of Thought Attribution Trace (Console):
+
+Step 1: If John has 3 apples...
+MLP  L10 █████████████████████████  23.2%
+MLP  L8  █████████████              12.6%
+MLP  L0  ████████████               11.5%
+Attn L11 ████████████               11.3%
+Attn L0  ██████████                  9.7%
+MLP  L7  █████████                   9.0%
+MLP  L11 ████████                    7.9%
+MLP  L6  ██████                      6.3%
+Attn L8  █████                       4.7%
+Attn L9  ███                         3.7%
 ```
 
 ---
