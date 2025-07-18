@@ -26,7 +26,31 @@ Built on [TransformerLens](https://github.com/neelnanda-io/TransformerLens), Hex
 ## 🔧 Usage
 
 ```bash
-python hexray.py --model gpt2-small --prompt "The sky was blue because"
+python hexray.py --prompt "Why do bees buzz?" --top-k-attribution 10  
+```
+
+---
+
+## 🟩 Output
+
+```bash
+Loading model gpt2-small...
+Loaded pretrained model gpt2-small into HookedTransformer
+Loaded pretrained model gpt2-small into HookedTransformer
+
+Token: "
+" (index -1)
+Top Contributors to Final Logit:
+- MLP  L9 : +46.16 (24.3%)
+- MLP  L11: +35.61 (18.8%)
+- MLP  L10: +30.14 (15.9%)
+- MLP  L8 : +19.81 (10.4%)
+- Attn L11: +14.21 (7.5%)
+- MLP  L0 : +10.53 (5.5%)
+- Attn L10: +9.93 (5.2%)
+- Attn L0 : +9.62 (5.1%)
+- Attn L7 : +7.67 (4.0%)
+- MLP  L2 : +6.20 (3.3%)
 ```
 
 ---
