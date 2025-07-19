@@ -7,19 +7,32 @@
 
 ## 🚀 What is HexRay?
 
-HexRay is a low-level debugger for transformer models. It gives you the power to inspect what happens inside large language models at every layer and every token — just like an X-ray reveals the inner structure of the human brain.
+HexRay is a low-level debugger for transformer models, purpose-built to illuminate the inner workings of large language models (LLMs) — token by token, layer by layer. Just like an X-ray reveals internal structures of the brain, HexRay reveals the computational circuitry behind each prediction.
 
-Built on [TransformerLens](https://github.com/neelnanda-io/TransformerLens) — a library for mechanistic interpretability of large language models. Mechanistic interpretability (MI) aims to reverse engineer the algorithms a model has learned by analyzing its weights. HexRay uses MI to enable token-level tracing, neuron-level introspection, and activation monitoring, making it a powerful tool for researchers, red teamers, and AI safety engineers. This makes HexRay act like a headlamp and scalpel for LLMs internals.
+Built on top of [TransformerLens](https://github.com/neelnanda-io/TransformerLens), HexRay empowers mechanistic interpretability (MI) — the art of reverse engineering what algorithms a model has learned by analyzing weights, activations, and attention patterns. HexRay extends this with:
+
+- 🔍 Logit debugging — trace how specific logits emerge and which neurons or attention heads contributed most.
+- 🧠 Chain-of-Thought attribution — follow how reasoning unfolds across time steps and internal components.
+- 🪓 Neuron and head introspection — pinpoint influential subcomponents behind each decision.
+- 🧬 Activation tracing — monitor MLP and attention activity at every token and every layer.
+- 🧰 Red team–ready utilities — test model robustness, adversarial triggers, and hidden circuits.
+
+Whether you're reverse engineering LLMs or probing safety risks in frontier models, HexRay gives you a scalpel and headlamp for exploring LLM internals with precision.
 
 ---
 
-## ✨ Features (v1)
+## ✨ Features
 
-- Token-by-token tracing of residual streams
-- CLI interface for easy model and prompt selection
-- Hook-based tracing with TransformerLens
-- Logs activations per layer for prompt analysis
-- Modular design for future fuzzing and visualization tools
+- Token-by-token residual stream tracing — inspect the evolution of hidden states at every layer and position.
+- Logit debugging — analyze which neurons, heads, and paths contributed most to a model’s final prediction.
+- Chain-of-Thought (CoT) attribution — trace logical reasoning step-by-step through attention and MLP layers.
+- Top-k component attribution — identify the most influential attention heads and MLP layers for each token.
+- Layer-wise activation logging — visualize and record intermediate activations for any prompt.
+- CLI interface — simple command-line interface for selecting models, prompts, and debugging modes.
+- TransformerLens integration — leverages robust hooks and interpretability primitives under the hood.
+- Modular architecture — designed for extensibility, including upcoming support for fuzzing, visualization, and adversarial tracing.
+- Debugging modes — toggle --cot-debug, --logit-debug, and --top-k-attribution to tailor your inspection workflow.
+- Supports multiple model scales with easy swapping via CLI.
 
 ---
 
