@@ -87,14 +87,6 @@ Attn L9  ███                         3.7%
 
 ## 📁 Project Structure
 
-```
-hexray/
-├── hexray.py              # CLI entry point
-├── debugger/
-│   └── tracer.py          # Residual tracer module
-├── README.md
-└── examples/
-```
 
 ---
 
