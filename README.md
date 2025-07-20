@@ -8,7 +8,7 @@
 
 HexRay is a low-level debugger for transformer models, purpose-built to illuminate the inner workings of AI — token by token, layer by layer. Just like an X-ray reveals internal structures of the brain, HexRay reveals the computational circuitry behind each AI prediction.
 
-Built on top of [TransformerLens](https://github.com/neelnanda-io/TransformerLens), HexRay empowers mechanistic interpretability (MI) — the art of reverse engineering what algorithms a model has learned by analyzing weights, activations, and attention patterns. Mechanistic interpretability aims to reverse-engineer the computational mechanisms of neural networks, providing a granular, causal understanding of AI decision-making [1][2][3]. HexRay extends this with:
+Built on top of [TransformerLens](https://github.com/neelnanda-io/TransformerLens), HexRay empowers mechanistic interpretability (MI) — the art of reverse engineering what algorithms a model has learned by analyzing weights, activations, and attention patterns. In other words, mechanistic interpretability aims to reverse-engineer the computational mechanisms of neural networks, providing a granular, causal understanding of AI decision-making [1][2][3]. HexRay extends this with:
 
 - 🔍 Logit debugging — trace how specific logits emerge and which neurons or attention heads contributed most.
 - 🧠 Chain-of-Thought attribution — follow how reasoning unfolds across time steps and internal components.
