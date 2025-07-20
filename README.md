@@ -8,7 +8,7 @@
 
 HexRay is a low-level debugger for transformer models, purpose-built to illuminate the inner workings of AI — token by token, layer by layer. Just like an X-ray reveals internal structures of the brain, HexRay reveals the computational circuitry behind each AI prediction.
 
-Built on top of [TransformerLens](https://github.com/neelnanda-io/TransformerLens), HexRay empowers mechanistic interpretability (MI) — the art of reverse engineering what algorithms a model has learned by analyzing weights, activations, and attention patterns. HexRay extends this with:
+Built on top of [TransformerLens](https://github.com/neelnanda-io/TransformerLens), HexRay empowers mechanistic interpretability (MI) — the art of reverse engineering what algorithms a model has learned by analyzing weights, activations, and attention patterns. Mechanistic interpretability aims to reverse-engineer the computational mechanisms of neural networks, providing a granular, causal understanding of AI decision-making [1][2][3]. HexRay extends this with:
 
 - 🔍 Logit debugging — trace how specific logits emerge and which neurons or attention heads contributed most.
 - 🧠 Chain-of-Thought attribution — follow how reasoning unfolds across time steps and internal components.
@@ -185,6 +185,14 @@ Attn L35 ███                         1.1%
 [debug] captured: ['blocks.0.hook_attn_out', 'blocks.1.hook_attn_out', 'blocks.2.hook_attn_out', 'blocks.3.hook_attn_out', 'blocks.4.hook_attn_out', 'blocks.5.hook_attn_out', 'blocks.6.hook_attn_out', 'blocks.7.hook_attn_out', 'blocks.8.hook_attn_out', 'blocks.9.hook_attn_out', 'blocks.10.hook_attn_out', 'blocks.11.hook_attn_out', 'blocks.12.hook_attn_out', 'blocks.13.hook_attn_out', 'blocks.14.hook_attn_out', 'blocks.15.hook_attn_out', 'blocks.16.hook_attn_out', 'blocks.17.hook_attn_out', 'blocks.18.hook_attn_out', 'blocks.19.hook_attn_out', 'blocks.20.hook_attn_out', 'blocks.21.hook_attn_out', 'blocks.22.hook_attn_out', 'blocks.23.hook_attn_out', 'blocks.24.hook_attn_out', 'blocks.25.hook_attn_out', 'blocks.26.hook_attn_out', 'blocks.27.hook_attn_out', 'blocks.28.hook_attn_out', 'blocks.29.hook_attn_out', 'blocks.30.hook_attn_out', 'blocks.31.hook_attn_out', 'blocks.32.hook_attn_out', 'blocks.33.hook_attn_out', 'blocks.34.hook_attn_out', 'blocks.35.hook_attn_out', 'blocks.36.hook_attn_out', 'blocks.37.hook_attn_out', 'blocks.38.hook_attn_out', 'blocks.39.hook_attn_out', 'blocks.40.hook_attn_out', 'blocks.41.hook_attn_out', 'blocks.42.hook_attn_out', 'blocks.43.hook_attn_out', 'blocks.44.hook_attn_out', 'blocks.45.hook_attn_out', 'blocks.46.hook_attn_out', 'blocks.47.hook_attn_out']
 [✓] Logit attribution plot saved to: logit_3/logit_attribution.png
 ```
+
+---
+## 📚 References
+[1] Olah, C., Cammarata, N., Schubert, L., Goh, G., Petrov, M., & Carter, S. (2020). Zoom In: An Introduction to Circuits. Distill, 5(3), e00024.001. https://doi.org/10.23915/distill.00024.001
+[2] Bereska, L., & Gavves, E. (2024). Mechanistic Interpretability for AI Safety -- A Review. ArXiv.org. https://arxiv.org/abs/2404.14082
+[3] Mapping the Mind of a Large Language Model. (n.d.). Www.anthropic.com. https://www.anthropic.com/research/mapping-mind-language-model
+
+‌
 ---
 
 ## 📜 License
