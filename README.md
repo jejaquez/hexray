@@ -1,13 +1,12 @@
 # 🔬 HexRay
 
-**Tagline:**  
-*An X-ray for transformers—tracing every token, neuron, and decision in real time.*
+*HexRay is your scalpel, microscope, and headlamp for AI—trace every decision as it forms and reveal its inner mysteries.*
 
 ---
 
 ## 🚀 What is HexRay?
 
-HexRay is a low-level debugger for transformer models, purpose-built to illuminate the inner workings of large language models (LLMs) — token by token, layer by layer. Just like an X-ray reveals internal structures of the brain, HexRay reveals the computational circuitry behind each prediction.
+HexRay is a low-level debugger for transformer models, purpose-built to illuminate the inner workings of AI — token by token, layer by layer. Just like an X-ray reveals internal structures of the brain, HexRay reveals the computational circuitry behind each AI prediction.
 
 Built on top of [TransformerLens](https://github.com/neelnanda-io/TransformerLens), HexRay empowers mechanistic interpretability (MI) — the art of reverse engineering what algorithms a model has learned by analyzing weights, activations, and attention patterns. HexRay extends this with:
 
@@ -17,7 +16,7 @@ Built on top of [TransformerLens](https://github.com/neelnanda-io/TransformerLen
 - 🧬 Activation tracing — monitor MLP and attention activity at every token and every layer.
 - 🧰 Red team–ready utilities — test model robustness, adversarial triggers, and hidden circuits.
 
-Whether you're reverse engineering LLMs or probing safety risks in frontier models, HexRay gives you a scalpel and headlamp for exploring LLM internals with precision.
+Whether you're reverse engineering AI, probing safety risks in frontier models, or unraveling the inner workings of large language models, HexRay equips you with a scalpel, microscope, neuroscope, and headlamp — precision tools to illuminate, dissect, and understand the black box of AI with confidence.
 
 ---
 
