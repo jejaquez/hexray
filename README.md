@@ -187,6 +187,10 @@ Attn L35 ███                         1.1%
 ```
 
 ---
+## 📚 Publications & Preprints
+- Jonathan Jaquez. HexRay: An Open-Source Neuroscope for AI - Tracing Tokens, Neurons, and Decisions for Frontier AI Research, Safety, and Security. TechRxiv. July 26, 2025. DOI: 10.36227/techrxiv.175356093.33637088/v1
+
+---
 ## 📚 References
 - [1] Olah, C., Cammarata, N., Schubert, L., Goh, G., Petrov, M., & Carter, S. (2020). Zoom In: An Introduction to Circuits. Distill, 5(3), e00024.001. https://doi.org/10.23915/distill.00024.001
 - [2] Bereska, L., & Gavves, E. (2024). Mechanistic Interpretability for AI Safety -- A Review. ArXiv.org. https://arxiv.org/abs/2404.14082
